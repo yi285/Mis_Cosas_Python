@@ -1,5 +1,5 @@
 pareja = input("Me quieres? ").upper()
-amigos = 0
+
 while pareja not in ["SI","NO"]:
     print("Por favor, indica si me quieres")
     pareja = input("Me quieres? ").upper()
