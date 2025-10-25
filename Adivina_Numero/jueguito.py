@@ -21,6 +21,7 @@ def juego ():
         while adivinanza != numero:
             if adivinanza < numero:
                 print("Demasiado bajo, intenta de nuevo.")
+                
             else:
                 print("Demasiado alto, intenta de nuevo.")
             adivinanza = int(input("Adivina un número entre 1 y 50: "))
