@@ -26,7 +26,7 @@ while pedido not in ["lobos","vacas","cerdos"]:
 
 if pedido == "lobos":
     loboshop()
-elif pedido =="cerdos":
+elif pedido =="vacas":
     vacasshop()
 else:
     cerdosshop()
