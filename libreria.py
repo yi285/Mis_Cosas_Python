@@ -14,13 +14,14 @@ if eleccion =="Romantico":
     libro_romatico  =["'Orgullo y Prejuicio' de Jane Austen", "'Bajo la misma estrella' de John Green", "'El cuaderno de Noah' de Nicholas Sparks"]
     print("Aquí tienes algunos libros del género Romántico:")
     
+
     for libro in libro_romatico:
         print(f" {libro}")
 
 elif eleccion =="Terror":
     libro_terror = ["'It' de Stephen King", "'El exorcista' de William Peter Blatty", "'Drácula' de Bram Stoker"]
     print("Aquí tienes algunos libros del género Terror:")
-    
+    precios = []
     for libro in libro_terror:
         print(f" {libro}")
     
@@ -30,7 +31,6 @@ elif eleccion =="Fantasia":
 
     for libro in libro_fantasia:
         print(f" {libro}")
-
 
 elif eleccion =="Ciencia Ficcion":
     print("Aquí tienes algunos libros del género Ciencia Ficción:")
@@ -43,7 +43,8 @@ elif eleccion =="Misterio":
 
     libro_misterio = ["'El código Da Vinci' de Dan Brown", "'Asesinato en el Orient Express' de Agatha Christie", "'La chica del tren' de Paula Hawkins"]
     print("Aquí tienes algunos libros del género Misterio:")
-    
+
     for libro in libro_misterio:
         print(f" {libro}")
-
+    
+#ponerle precio a los libros y poder comprarlos
