@@ -1,11 +1,10 @@
+def numeros(numero1):
+    resultado =  numero1 * numero1
+    print(resultado)
+    return resultado
 
-def saludar(nombre = "desconocido"):
-    print(f"(Dentro de la función) El nombre es: {nombre}") 
-    return nombre
+numero_elegido = float(input("Dime un numero por favor: "))
 
-nombre = input("Dime tu nombre: ")
-nombre = saludar(nombre) 
-
-saludo = (f"hola {nombre}")
-print(saludo)
+resultado =(numeros(numero_elegido))
+print(resultado)
 
