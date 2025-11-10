@@ -1,0 +1,96 @@
+
+import random
+print("Vamos a jugar a un juego. Simplemente tienes que responder a los calculos de manera correcta en poco tiempo.")
+jugador = input("Cual es tu nombre: ")
+dificultad = input("Que nivel de dificultad quieres? 1 - 2 - 3 - 4 - 5: ")
+
+while dificultad not in ["1", "2", "3", "4", "5"]:
+    print("Debes elegir una opcion correcta")
+    dificultad = input("Que nivel de dificultad quieres? 1 - 2 - 3 - 4 - 5: ")
+
+dificultad = int(dificultad)
+numerod2 = random.randint(10,20)
+
+puntos = 0
+
+
+while dificultad == 1:
+    numero = random.randint(10,20)
+    sumatorio =random.randint(10,20)
+    print(f"Comienzas por el numero: {numero}")
+    print(f"Cuanto es {numero} + {sumatorio}")
+    resultado = numero + sumatorio
+    respuesta =  int(input("Dime el resultado: "))
+    if respuesta != resultado:
+        print(f"Game over. La respuesta correcta es {resultado}.")
+        print(f"Has conseguido un total de {puntos} puntos.")
+        exit()
+    else:
+        print("Correcto")
+        puntos+=1
+
+while dificultad == 2:
+    sumatorio =random.randint(10,20)
+    print(f"Comienzas por el numero: {numerod2}")
+    print(f"Cuanto es {numerod2} + {sumatorio}")
+    resultado = numerod2 + sumatorio
+    respuesta =  int(input("Dime el resultado: "))
+    if respuesta != resultado:
+        print(f"Game over. La respuesta correcta es {resultado}.")
+        print(f"Has conseguido un total de {puntos} puntos.")
+        exit()
+    else:
+        print("Correcto")
+        puntos+=1
+
+    numerod2 = numerod2 + sumatorio
+
+while dificultad == 3:
+    numero = random.randint(10,20)
+    sumatorio =random.randint(10,20)
+    sumatorio2= random.randint(10,20)
+    print(f"Comienzas por el numero: {numerod2}")
+    print(f"Cuanto es {numerod2} + {sumatorio} + {sumatorio2}")
+    resultado = numero + sumatorio + sumatorio2
+    respuesta =  int(input("Dime el resultado: "))
+    if respuesta != resultado:
+        print(f"Game over. La respuesta correcta es {resultado}.")
+        print(f"Has conseguido un total de {puntos} puntos.")
+        exit()
+    else:
+        print("Correcto")
+        puntos+=1
+    numero = numero + sumatorio + sumatorio2
+
+while dificultad == 4:
+    numero = random.randint(10,20)
+    sumatorio =random.randint(1,10)
+    print(f"Comienzas por el numero: {numero}")
+    print(f"Cuanto es {numero} * {sumatorio}")
+    resultado = numero * sumatorio 
+    respuesta =  int(input("Dime el resultado: "))
+    if respuesta != resultado:
+        print(f"Game over. La respuesta correcta es {resultado}.")
+        print(f"Has conseguido un total de {puntos} puntos.")
+        exit()
+    else:
+        print("Correcto")
+        puntos+=1
+    numero = numero + sumatorio
+
+while dificultad == 5:
+    numero = random.randint(10,20)
+    sumatorio =random.randint(1,10)
+    sumatorio2= random.randint(1,10)
+    print(f"Comienzas por el numero: {numerod2}")
+    print(f"Cuanto es {numerod2} * {sumatorio} * {sumatorio2}")
+    resultado = numero + sumatorio + sumatorio2
+    respuesta =  int(input("Dime el resultado: "))
+    if respuesta != resultado:
+        print(f"Game over. La respuesta correcta es {resultado}.")
+        print(f"Has conseguido un total de {puntos} puntos.")
+        exit()
+    else:
+        print("Correcto")
+        puntos+=1
+    numero = numero + sumatorio + sumatorio2
